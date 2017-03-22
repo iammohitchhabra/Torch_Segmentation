@@ -1,0 +1,14 @@
+VERSION 1 
+Simple Deconv Net 
+
+VERSION 2
+Change: Added ADAM
+Observation : Training time reduced by 14x.
+
+VERSION 3
+Change Split the network into two branches. Used linear convolution. No bias in SpatialUpConvolution layers. Xavier weight initialization
+Observation: Loss reduced to less than 0.05. Weight initialization caused the network to start at higher loss. But it may be the cause of decreased loss. Also the higher loss is covered up at the expense of a few iterations (50~100).
+
+VERSION 4
+Tried the segmentation with 32 classes. Not able to segment into classes. It seems that that data is insufficient.
+
